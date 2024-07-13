@@ -1,35 +1,57 @@
-algoritmo "semnome"
-// FunÁ„o :
-// Autor :Fernando Marques Guimar„es
-// Data : 13/07/2024
-// SeÁ„o de DeclaraÁıes 
+algoritmo "Resposta Exerc√≠cio Fun√ß√£o Se M√©dia Aluno"
+// Fun√ß√£o :
+// Autor :
+// Data : 12/01/2022
+// Se√ß√£o de Declara√ß√µes 
 var
 
-   nota1,nota2,nota3,nota4,rec,media: real
+   nota1, nota2, nota3, nota4, media, notaRecuperacao, mediaRecuperacao : real
 
 inicio
 
-      Escreval("digite sua primeira nota")
-      leia(nota1)
-      Escreval("digite sua segunda nota")
-      leia(nota2)
-      Escreval("digite sua terceira nota")
-      leia(nota3)
-      Escreval("digite sua quarta nota")
-      leia(nota4)
-      media <-(nota1+nota2+nota3+nota4)/4
-      se (media>=7) entao
-      Escreval("vocÍ foi aprovado")
-      senao
-      Escreval("vocÍ foi reprovado faÁa recuperaÁ„o")
-      Fimse
-      Escreval("digite a nota da recuperaÁ„o")
-      leia(rec)
-      media<-(nota1+nota2+nota3+rec)/4
-               se (media>=7) entao
-               Escreval("vocÍ foi aprovado depois da recuperaÁ„o")
-               senao
-               Escreval("vocÍ foi reprovado")
-               Fimse
+      Escreval("Digite a nota 1 do aluno: ")
+      leia( nota1 )
       
+      Escreval("Digite a nota 2 do aluno: ")
+      leia( nota2 )
+      
+      Escreval("Digite a nota 3 do aluno: ")
+      leia( nota3 )
+      
+      Escreval("Digite a nota 4 do aluno: ")
+      leia( nota4 )
+      
+      media <- ( nota1 + nota2 + nota3 + nota4 ) / 4
+      
+      Se ( media >= 7 ) Entao
+      
+           Escreval("O aluno foi aprovado com a m√©dia: ", media)
+      
+      Senao
+      
+           Escreval( "O aluno ficou em recupera√ß√£o, tirou a m√©dia: ", media )
+           Escreval
+           Escreval
+           Escreval
+           Escreval("Digite a nota que o aluno tirou na recupera√ß√£o: ")
+           leia( notaRecuperacao )
+           
+           mediaRecuperacao <- ( media + notaRecuperacao ) / 2
+           
+           Se ( mediaRecuperacao >= 7) Entao
+           
+                Escreval("M√©dia: ", media)
+                Escreval("Nota Recupera√ß√£o: ", notaRecuperacao)
+                Escreval("O aluno foi aprovado sua m√©dia √©: ", mediaRecuperacao)
+           
+           Senao
+           
+                Escreval("M√©dia: ", media)
+                Escreval("Nota Recupera√ß√£o: ", notaRecuperacao)
+                Escreval("O aluno N√ÇO foi aprovado sua m√©dia √©: ", mediaRecuperacao)
+           
+           FimSe
+      
+      FimSe
+
 fimalgoritmo
