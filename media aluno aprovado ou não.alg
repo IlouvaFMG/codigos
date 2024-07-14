@@ -1,7 +1,7 @@
 algoritmo " Exercício Função Se Média Aluno"
 // Função :
 // Autor :
-// Data : 12/01/2022
+// Data : 13/07/2024
 // Seção de Declarações 
 var
 
