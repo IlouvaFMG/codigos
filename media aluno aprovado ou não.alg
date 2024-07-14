@@ -1,4 +1,4 @@
-algoritmo "Resposta Exercício Função Se Média Aluno"
+algoritmo " Exercício Função Se Média Aluno"
 // Função :
 // Autor :
 // Data : 12/01/2022
