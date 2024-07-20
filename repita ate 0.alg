@@ -1,18 +1,25 @@
-algoritmo "repita até 0"
-// Função :
+algoritmo "repita atÃ© 0"
+// FunÃ§Ã£o :
 // Autor :
 // Data : 20/07/2024
-// Seção de Declarações 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes 
 var
 
-   numero: inteiro
+   numero: real
+   maior: real
 
 inicio
 
-      Escreval("digite um número")
-      leia(numero)
-      repita numero<-numero-1
-             Escreval(numero)
+      maior<-0
+      
+      repita
+            Escreval("digte um nÃºmero:")
+            leia(numero)
+            se( numero > maior) entao
+                maior <- numero
+            fimse
       ate numero=0
+      Escreval("o numero maior Ã©:",maior)
+
       
 fimalgoritmo
